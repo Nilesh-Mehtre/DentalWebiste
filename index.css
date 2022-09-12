@@ -16,28 +16,49 @@ body {
 .navbar p {
   font-size: 2rem;
 }
+
 .heading {
   /* border: 2px solid black; */
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
   margin: 30px 0;
+  padding: 0 0 0 100px;
   gap: 30px;
+  /* border: 2px solid black; */
+}
+.heading .info .icon{
+  font-size: 15px;
+  
+  margin-right: 10px;
 }
 .heading h1 {
   font-size: 3rem;
 }
-.left {
+.heading .left {
   /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-left: 120px;
+  
   flex: 1;
+}
+.heading .right{
+  flex: 2;
+}
+.dentist_image {
+  
+  /* border: 2px solid black; */
+  border-radius: 50% 0 0 50%;
+  height: 100%;
+  width: 100%;
+ 
+  /* border: 2px solid black; */
+  /* padding: 50px 0 50px 0; */
 }
 
 .button {
-  padding: 20px 60px;
+  padding: 15px 50px;
   width: fit-content;
   border: 2px solid #ff724a;
   border-radius: 5px;
@@ -45,20 +66,14 @@ body {
   font-weight: bold;
   font-size: 1rem;
   background-color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .button:hover {
   background-color: #ff724a;
   color: white;
 }
-.dentist_image {
-  box-sizing: border-box;
-  /* border: 2px solid black; */
-  border-radius: 50% 0 0 50%;
-  height: 629px;
-  width: 700px;
-  flex: 1;
-  /* padding: 50px 0 50px 0; */
-}
+
 
 /* info part */
 .contact-cards {
@@ -80,9 +95,11 @@ body {
   background-color: #ff724a;
   padding: 30px 20px;
   border-radius: 8px;
+  box-shadow: 0 7px 15px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 .card-heading {
   margin-bottom: 8px;
+  letter-spacing: 2px;
 }
 .cards .img {
   font-size: 40px;
@@ -90,10 +107,17 @@ body {
 .cards .more {
   border-bottom: 1px solid white;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.cards .more:hover{
+  border-bottom:  1px solid#ec8768;
+  
 }
 .mission_part h1 {
   text-align: center;
   margin: 100px 0 0 0;
+  
 }
 
 .mission {
@@ -126,42 +150,609 @@ body {
   font-weight: normal;
 }
 .ports div p {
+  font-size: 15px;
   font-style: italic;
 }
 .fa-circle {
   font-size: 40px;
   color: #ff724a;
 }
+
 .about {
-  position: relative;
+ 
   /* border: 2px solid black; */
+  padding : 25px 0 25px 100px;
+  background-image: url(/images/dentist-with-dentistry-tools-isolated.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-origin:padding-box;
 }
-.about img {
-  width: 100%;
-  height: 618px;
-  position: absolute;
-}
+
 .about .left {
+  
   display: flex;
   flex-direction: column;
   gap: 0px;
   /* border: 2px solid black; */
-  position: absolute;
-  top: 100px;
+ 
 }
 
 .about .left .para {
   display: flex;
   gap: 40px;
-  width: 400px;
+  width: 40%;
   text-align: justify;
   justify-content: space-between;
 }
 .about .left .para {
-  padding: 20px 0 20px 0;
+  
   line-height: 1.5;
 }
 .about .left h5 {
-  font-size: 2rem;
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.about .left .heading
+{
+  padding: 0;
+}
+.what-people-say {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  
+ align-items: center;
+}
+.what-people-say .what-people-say-heading{
+  margin: 25px;
+  font-size: 3rem;
+  text-align: center;
+  
+}
+.content{
+  display: flex;
+  
+  justify-content: space-around;
+  margin: 20px 80px;
+  
+}
+
+.review{
+  background-color: #ff724a;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 30px;
+  text-align: justify;
+  margin: 15px;
+  border-radius: 8px;
+  color: white;
+}
+.review .fa-quote-right
+{ 
+  color: #ff9c80;
+  font-size: 50px;
+}
+
+.dentistry{
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  padding-right: 100px;
+}
+.dentistry-img{
+  flex:2;
+  width: 100%;
+}
+.dentistry img{
+  
+  width: 100%;
+  
+  border-radius: 0 50% 50% 0;
+}
+.dentistry .right{
+  
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  text-align: justify;
+
+  
+}
+
+.dentistry .right h1{
+  font-size: 3rem;
+}
+.dentistry .right h4{
+  font-weight: normal;
+  word-spacing: 2px;
+  letter-spacing: 3px;
+}
+.dentistry .right p{
+  line-height: 1.8;
+}
+.our-team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff724a;
+  color: white;
+  margin: 25px 0;
+  padding: 30px 0;
+  gap: 40px;
+  
+}
+
+.our-team-heading{
+  font-size: 3rem;
+}
+.our-team .slogan{
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+.dentists{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap:  0px;
+  margin: 25px 75px;
+
+
+}
+.box .doctors{
+  width: 100%;
+  height: 200px;
+ 
+  border-radius: 0 8px 8px 0;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 50px 15px;
+  margin: 15px;
+  gap: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 0 10px 10px 0;
+
+}
+.box h4{
+  color: rgb(156, 163, 168);
+}
+.box p{
+  color: rgb(156, 163, 168);
+}
+.box h1,h4{
   font-weight: normal;
 }
+.box .images{
+  display: flex;
+  gap: 25px;
+  
+}
+.fa-instagram,.fa-facebook,.fa-twitter{
+  font-size: 25px;
+  color: #ff724a;
+ 
+  
+}
+
+.dentistry-1{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 120px;
+  padding-top: 50px;
+}
+.dentistry-1-image{
+  flex: 2;
+  width: 100%;
+  
+  
+}
+
+.dentistry-1-image img{
+  width: 100%;
+  border-radius: 50% 0 0 50%;
+}
+.dentistry-1 .left{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.dentistry-1 .left h1{
+  font-size: 3rem;
+}
+.dentistry-1 .left h4{
+  font-weight: normal;
+  word-spacing: 2px;
+  letter-spacing: 3px;
+}
+.dentistry-1 .left p{
+  line-height: 1.8;
+}
+
+.input
+{ 
+  margin: 50px 0;
+  padding-right: 100px;
+  display: flex;
+  
+  gap: 50px;
+}
+.input .male-dentist
+{
+  flex: 2;
+  width: 100%;
+}
+.input .male-dentist img{
+  width:100%;
+  /* height: 80%; */
+  border-radius: 0 50% 50% 0;
+}
+.input .form {
+  flex: 1;
+  gap: 20px;
+  display: flex;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 40px 60px; */
+  
+  
+  
+}
+.input .form .contact-us{
+  font-size: 3rem;
+  
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.details .field{
+  color: black;
+  padding-bottom: 10px;
+  /* background-color: transparent; */
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #999999;
+  outline: none;
+  /* margin-bottom: 15px; */
+  
+}
+
+.input .form .button{
+  margin: 20px 0;
+  width: 100%;
+}
+.input .checkbox{
+  position: relative;
+  top: 2px;
+}
+.input .form a{
+  color: #ff724a;
+  text-decoration: none;
+}
+.contact-info
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px;
+  margin: 50px;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.contact-info .card{
+  background-color: #ff724a;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  gap: 25px;
+  color: white;
+  border-radius: 8px;
+}
+
+.footer
+{  
+  background-color:  #333333;
+  padding: 20px;
+  color: #999999;
+  text-align: center;
+}
+
+
+
+
+@media  screen and (max-width : 900px){
+
+
+
+/* display of services dental care, surgery */
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    padding: 0 40px;
+  
+    
+  }
+  .cards {
+    
+    flex: 25%;
+
+    
+  }
+  
+
+  /* display of main heading below navbar */
+   
+.heading {
+  display: grid;
+  grid-template-columns: 1fr;
+ 
+  /* border: 2px solid black; */
+}
+
+
+/* About us design */
+.about {
+  box-sizing: border-box;
+  background-position:center;
+  padding-left: 25px;
+  /* border: 2px solid black; */
+}
+
+/* what people say section */
+.what-people-say .content{
+  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+/* dentistry design */
+
+.dentistry{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  padding: 10px 150px 0 0;
+}
+.dentistry .right{
+  display: flex;
+  padding-left: 40px;
+  margin:0;
+  
+}
+
+/* Our team design */
+
+.dentists{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+  
+}
+
+/* dentistry-1 design */
+.dentistry-1{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding-left: 80px;
+  padding-top: 50px;
+  
+}
+.dentistry-1 .left{
+  padding-right: 50px;
+}
+
+.input
+{ 
+  margin: 50px 0;
+  padding-right: 75px;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  gap: 50px;
+}
+.input .form{
+  padding-left: 50px;
+}
+
+
+
+/* contact cards design */
+.contact-info
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+}
+
+
+
+
+
+@media  screen and (max-width : 500px){
+
+/* Nav bar design */
+.navbar {
+  display: grid;
+ grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+/* heading main */
+.heading {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 20px;
+  
+  /* border: 2px solid black; */
+}
+.heading .left
+{
+  width: 90%;
+}
+/* mission */
+
+.mission {
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 80px 10px;
+  /* justify-content: space-around;
+  align-content: center; */
+  gap: 50px 60px;
+}
+.ports {
+  /* border: 2px  solid saddlebrown; */
+  padding: 0 25px;
+  flex-direction: column;
+  gap: 15px;
+
+ 
+}
+/* About us design */
+.about {
+ 
+  /* border: 2px solid black; */
+  padding : 30px 0px 30px 30px;
+  background-image: url(/images/dentist-with-dentistry-tools-isolated.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-origin:padding-box;
+}
+
+.about .left {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  /* border: 2px solid black; */
+ 
+}
+
+.about .left .para {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.about .left .para p{
+ 
+ padding-right: 0;
+}
+
+.about .left h5 {
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+.about .left h1
+{
+  font-size: 2rem;
+}
+
+/* what people say section */
+.what-people-say .content{
+  
+  margin: 0; 
+  grid-template-columns: 1fr
+}
+.what-people-say .what-people-say-heading{
+  margin: 25px;
+  font-size: 2rem;
+  text-align: center;
+  
+}
+
+/* dentistry design */
+
+.dentistry{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  padding: 0 40px 0 0;
+}
+.dentistry .right{
+  display: flex;
+  padding-left: 40px;
+  margin:0;
+  
+}
+.dentistry .right h1{
+  font-size: 2rem;
+}
+
+/* Our team design */
+
+.dentists{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin: 20px 35px;
+  
+}
+
+.our-team-heading{
+  font-size: 2rem;
+}
+.our-team .slogan{
+  
+  line-height: 1.2;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+
+/* dentistry-1 design */
+.dentistry-1{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding-left: 80px;
+  padding-top: 50px;
+  
+}
+.dentistry-1 .left{
+  padding-right: 50px;
+}
+
+.contact-info
+{ margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+
+
+.contact-cards {
+    
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 30px;
+  
+    
+  }
+  
+
+}
+
+
